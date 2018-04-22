@@ -1,0 +1,35 @@
+<!--
+  Generated template for the ResortdataPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>resortdata</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+  
+   <div *ngFor="let d of activitiesList; let i = index; ">
+    <ion-item href = "https://www.yelp.com/biz/din-tai-fung-los-angeles?adjust_creative=2tfPBfgAkNazbrqMZ6TISQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2tfPBfgAkNazbrqMZ6TISQ">
+          <ion-thumbnail item-left>
+      <img data-src="{{d.image_url}}">
+    </ion-thumbnail>
+
+    <span class="title-font">
+      <a href = "https://www.yelp.com/biz/din-tai-fung-los-angeles?adjust_creative=2tfPBfgAkNazbrqMZ6TISQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2tfPBfgAkNazbrqMZ6TISQ">
+                             {{d.name}}</a></span><br>
+    <span class="food-menu">{{d.review_count}} Reviews</span><br>
+    <span class="food-menu">{{d.categories[0]?.title}} {{d.categories[1]?.title}} {{d.categories[2]?.title}}</span>
+    <ion-icon item-right name="star" class="rating-style">
+      <span class="rating">{{d.rating}}</span>
+    </ion-icon>
+  </ion-item>
+   
+    </div>  
+</ion-content>

@@ -1,0 +1,14 @@
+{
+"name": "demoProject",
+"app_id": "",
+"type": "ionic-angular",
+"integrations": {
+"cordova": {}
+},
+"proxies": [
+{
+"path":"/businesses",
+"proxyUrl": "https://api.yelp.com/v3/businesses"
+}
+]
+}
