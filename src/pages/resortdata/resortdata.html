@@ -1,37 +1,27 @@
-<!--
-  Generated template for the ResortdataPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>resortdata</ion-title>
+    <ion-title>resort data</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content >
-  
-   <div *ngFor="let activity of activitiesList; let i = index; ">
-    <ion-item >
-  
-    <ion-thumbnail item-left>
-      <img data-src="{{activity.image_url}}">
-    </ion-thumbnail>
 
-    <span class="title-font">
-      <a href = "{{activity.url}}">
-                             {{activity.name}}</a></span><br>
-    <span class="food-menu">{{activity.review_count}} Reviews</span><br>
-    <span class="food-menu">{{activity.categories[0]?.title}} {{activity.categories[1]?.title}} {{activity.categories[2]?.title}}</span>
-    <ion-icon item-right name="star" class="rating-style">
-      <span class="rating">{{activity.rating}}</span>
-    </ion-icon>
-  
-  </ion-item>
-   
-    </div>  
+   <div *ngFor="let activity of activitiesList; let i = index; ">
+      <ion-item >
+        <ion-thumbnail item-left>
+            <img data-src="{{activity.image_url}}">
+        </ion-thumbnail>
+
+        <span class="title-font">
+          <a href = "{{activity.url}}">{{activity.name}}</a>
+        </span>
+        <br>
+        <span class="food-menu">{{activity.review_count}} Reviews</span>
+        <br>
+        <span class="food-menu">{{activity.categories[0]?.title}} {{activity.categories[1]?.title}} {{activity.categories[2]?.title}}</span>
+        <ion-icon item-right name="star" class="rating-style">
+          <span class="rating">{{activity.rating}}</span>
+        </ion-icon>
+    </ion-item>
+    </div>
 </ion-content>
