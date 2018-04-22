@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { RequestOptions,Headers } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
+//import { RequestOptions,Headers } from '@angular/http';
+//import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
 /**
