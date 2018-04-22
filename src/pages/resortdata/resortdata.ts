@@ -38,13 +38,7 @@ export class ResortdataPage {
       });
   }
 
-  URL(){
-    this.navCtrl.push("https://www.yelp.com/biz/din-tai-fung-los-angeles?adjust_creative=2tfPBfgAkNazbrqMZ6TISQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2tfPBfgAkNazbrqMZ6TISQ");
-  }
-  
-  onClick():void{
-    this.navCtrl.push('https://www.yelp.com/biz/din-tai-fung-los-angeles?adjust_creative=2tfPBfgAkNazbrqMZ6TISQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=2tfPBfgAkNazbrqMZ6TISQ');
-  }
+ 
   ionViewDidLoad(){
     this.getActivitiesList()
       .subscribe(data => 
